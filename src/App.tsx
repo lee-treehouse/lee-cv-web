@@ -11,6 +11,7 @@ import {
   Button,
 } from '@chakra-ui/react';
 import photoOfLee from '../src/photo_of_lee.jpg';
+import Role from './components/Role';
 import SectionHeader from './components/SectionHeader';
 import RoleHeader from './components/RoleHeader';
 import ResponsibilitiesList from './components/ResponsibilitiesList';
@@ -68,19 +69,11 @@ function App() {
           />
 
           <SectionHeader text='Professional Experience' />
-          <RoleHeader
-            title='Software Engineer'
-            period='Littlepay, November 2021 - Current'
-          />
 
-          <ResponsibilitiesList items={['hiring, presenting', '', '']} />
-
-          <RoleHeader
+          <Role
             title='Full Stack Developer'
-            period='Charli AI, March 2021-September 2021'
-          />
-
-          <ResponsibilitiesList
+            period='March 2021-September 2021'
+            employer='Charli AI'
             items={[
               'Front-end development with React, Redux and Typescript, contributing to feature development and building reusable UI components with Charka UI and Styled System.',
               'Back-end microservice development with Node & Express, building RESTful APIs and integrating with Postgres and other internal services. ',
@@ -103,7 +96,8 @@ function App() {
 
           <RoleHeader
             title='Contract Analyst Programmer'
-            period='Uecomm, January 2009 – November 2009 '
+            period='January 2009 – November 2009 '
+            employer='Uecomm'
           />
 
           <ResponsibilitiesList
@@ -116,7 +110,8 @@ function App() {
 
           <RoleHeader
             title='Development Team Leader'
-            period='Portland House Group, July 2006 – December 2008'
+            period='July 2006 – December 2008'
+            employer='Portland House Group'
           />
 
           <ResponsibilitiesList
@@ -130,16 +125,19 @@ function App() {
           <RoleHeader
             title='Analyst Programmer'
             period='March 2001 – June 2006'
+            employer='Bourse Data'
           />
 
           <RoleHeader
             title='Contract Analyst Programmer'
-            period='Fortis Australia, October 2000 – March 2001'
+            period='October 2000 – March 2001'
+            employer='Fortis Australia'
           />
 
           <RoleHeader
             title='Web Developer'
-            period='Spin Technologies, January 1999 – October 2000'
+            period='January 1999 – October 2000'
+            employer='Spin Technologies'
           />
         </VStack>
       </main>

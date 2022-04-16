@@ -1,4 +1,4 @@
-import { Heading, Text } from '@chakra-ui/react';
+import { Heading, Text, Badge, HStack } from '@chakra-ui/react';
 import React from 'react';
 
 const RoleHeader = (props: any) => {
@@ -7,9 +7,12 @@ const RoleHeader = (props: any) => {
       <Heading as='h4' size='small'>
         {props.title}
       </Heading>
-      <Text fontStyle='italic' marginTop='0px'>
-        {props.period}
-      </Text>
+      <HStack>
+        <Text fontStyle='italic' marginTop='0px'>
+          {props.employer}
+        </Text>
+        <Badge colorScheme='purple'>{props.period}</Badge>
+      </HStack>
     </>
   );
 };
