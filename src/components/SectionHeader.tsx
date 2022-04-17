@@ -1,11 +1,18 @@
-import { Heading } from '@chakra-ui/react';
+import { Box, Heading, Divider } from '@chakra-ui/react';
 import React from 'react';
 
-export const SectionHeader = (props: any) => {
+interface props {
+  text: string;
+}
+
+export const SectionHeader: React.FunctionComponent<props> = ({ text }) => {
   return (
-    <Heading as='h3' size='medium' color='blue'>
-      {props.text}
-    </Heading>
+    <Box width='100%'>
+      <Heading as='h3' size='large' textTransform='uppercase'>
+        {text}
+      </Heading>
+      <Divider marginBottom='0.5rem' />
+    </Box>
   );
 };
 

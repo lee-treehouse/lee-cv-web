@@ -1,19 +1,31 @@
 import React from 'react';
-
-import RoleHeader from './RoleHeader';
+import { Heading, Text, Badge, HStack, Box } from '@chakra-ui/react';
 import ResponsibilitiesList from './ResponsibilitiesList';
 
-const Role = (props: any) => {
-  return (
-    <>
-      <RoleHeader
-        title={props.title}
-        period={props.period}
-        employer={props.employer}
-      />
+interface props {
+  title: string;
+  period: string;
+  items?: string[];
+  employer?: string;
+}
 
-      <ResponsibilitiesList items={props.items} />
-    </>
+const Role: React.FunctionComponent<props> = ({
+  title,
+  period,
+  items,
+  employer,
+}) => {
+  return (
+    <Box marginBottom='1.5rem'>
+      <Heading as='h4' size='small'>
+        {title}
+      </Heading>
+      <HStack>
+        <Text fontStyle='italic'>{employer}</Text>
+        <Badge colorScheme='purple'>{period}</Badge>
+      </HStack>
+      <ResponsibilitiesList items={items} />
+    </Box>
   );
 };
 
