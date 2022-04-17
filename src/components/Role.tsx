@@ -22,7 +22,7 @@ const Role: React.FunctionComponent<props> = ({
       </Heading>
       <HStack>
         <Text fontStyle='italic'>{employer}</Text>
-        <Badge colorScheme='purple'>{period}</Badge>
+        <Badge colorScheme='blue'>{period}</Badge>
       </HStack>
       {items && <ResponsibilitiesList items={items} />}
     </Box>

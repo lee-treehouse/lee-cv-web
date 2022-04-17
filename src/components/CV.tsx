@@ -2,7 +2,7 @@ import React from 'react';
 import Role from './Role';
 import SectionHeader from './SectionHeader';
 import ResponsibilitiesList from './ResponsibilitiesList';
-import { Box } from '@chakra-ui/react';
+import { Box, HStack, Tag } from '@chakra-ui/react';
 
 const PADDING_BELOW_SECTIONS = '1.5rem';
 
@@ -14,12 +14,32 @@ const CV = () => {
         <ResponsibilitiesList
           items={[
             '10 years+ experience in web development',
-            'Recent returnee to industry after time out raising children',
-            'Confidently skilled proactive all-rounder, efficient and organized',
             'Excellent communication and interpersonal skills',
             'Grasps complex business and technical issues quickly',
+            'Confidently skilled proactive all-rounder, efficient and organized',
+            'Recent returnee to industry after time out raising children',
           ]}
         />
+      </Box>
+
+      <Box marginBottom={PADDING_BELOW_SECTIONS}>
+        <SectionHeader text='Technologies' />
+        <HStack spacing={2}>
+          {[
+            'Javascript',
+            'Typescript',
+            'React',
+            'Node',
+            'Redux',
+            'CSS',
+            'HTML',
+            'SQL',
+          ].map((item) => (
+            <Tag size='sm' key={item} variant='solid' colorScheme='blue'>
+              {item}
+            </Tag>
+          ))}
+        </HStack>
       </Box>
 
       <Box marginBottom={PADDING_BELOW_SECTIONS}>
