@@ -15,6 +15,8 @@ import CV from './components/CV';
 import About from './components/About';
 import { Routes, Route, Link as RouterLink } from 'react-router-dom';
 
+const ABOUT_SECTION_ENABLED = false;
+
 function App() {
   return (
     <Box maxWidth='800px' margin='1rem auto'>
@@ -42,9 +44,11 @@ function App() {
                 <Link as={RouterLink} to='/'>
                   CV
                 </Link>
-                <Link as={RouterLink} to='/about'>
-                  About
-                </Link>
+                {ABOUT_SECTION_ENABLED && (
+                  <Link as={RouterLink} to='/about'>
+                    About
+                  </Link>
+                )}
 
                 <Link href='https://github.com/lee-treehouse' isExternal>
                   <Button>GitHub</Button>

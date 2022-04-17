@@ -38,6 +38,12 @@ const CV = () => {
         <SectionHeader text='Professional Experience' />
 
         <Role
+          title='Software Engineer'
+          period='November 2021 - Current'
+          employer='Littlepay'
+        />
+
+        <Role
           title='Full Stack Developer'
           period='March 2021-September 2021'
           employer='Charli AI'
