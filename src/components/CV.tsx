@@ -26,10 +26,9 @@ const CV = () => {
         <SectionHeader text='Recent Certifications' />
         <ResponsibilitiesList
           items={[
-            'Get some AWS on here',
-            'Get the full stack cloud cert on here',
-            'Get payment technologies on here',
-            ' W3Cx – Introduction to Web Accessibility',
+            'IBM Full Stack Cloud Developer Professional Certificate - April 2022 ',
+            'The future of Payment Technologies - October 2021 ',
+            'Introduction to Web Accessibility - September 2021 ',
           ]}
         />
       </Box>

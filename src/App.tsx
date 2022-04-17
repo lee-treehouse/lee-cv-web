@@ -22,7 +22,11 @@ function App() {
   return (
     <Box maxWidth='800px' margin='1rem auto' paddingX='0.5rem'>
       <header>
-        <Flex justifyContent='space-between' marginBottom='1.5rem'>
+        <Flex
+          flexDirection={['column-reverse', 'row']}
+          justifyContent='space-between'
+          marginBottom='1.5rem'
+        >
           <Box>
             <HStack>
               <Image
@@ -43,7 +47,7 @@ function App() {
           </Box>
           <Box>
             <nav>
-              <HStack spacing='1rem'>
+              <HStack spacing='1rem' justify={['flex-end']}>
                 <Link as={RouterLink} to='/'>
                   CV
                 </Link>
