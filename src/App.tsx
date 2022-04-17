@@ -9,6 +9,7 @@ import {
   Image,
   Button,
   Link,
+  Heading,
 } from '@chakra-ui/react';
 import photoOfLee from '../src/photo_of_lee.jpg';
 import CV from './components/CV';
@@ -19,7 +20,7 @@ const ABOUT_SECTION_ENABLED = false;
 
 function App() {
   return (
-    <Box maxWidth='800px' margin='1rem auto'>
+    <Box maxWidth='800px' margin='1rem auto' paddingX='0.5rem'>
       <header>
         <Flex justifyContent='space-between' marginBottom='1.5rem'>
           <Box>
@@ -27,11 +28,13 @@ function App() {
               <Image
                 src={photoOfLee}
                 alt='Lee Taylor'
-                boxSize='70px'
+                boxSize='60px'
                 borderRadius='full'
               />
-              <VStack alignItems='flex-start'>
-                <Text size='small'>Lee Taylor</Text>
+              <VStack alignItems='flex-start' spacing={0}>
+                <Heading as='h3' size='large'>
+                  Lee Taylor
+                </Heading>
                 <Text size='small'>
                   People &amp; business focused full stack engineer
                 </Text>
