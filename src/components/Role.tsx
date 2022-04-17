@@ -16,11 +16,11 @@ const Role: React.FunctionComponent<props> = ({
   employer,
 }) => {
   return (
-    <Box marginBottom='1.5rem'>
-      <Heading as='h4' size='small' marginBottom='0.5rem'>
+    <Box marginBottom='1.2rem'>
+      <Heading as='h4' size='small' marginBottom='0.2rem'>
         {title}
       </Heading>
-      <HStack>
+      <HStack marginBottom='0.2rem'>
         <Text fontStyle='italic'>{employer}</Text>
         <Badge colorScheme='blue'>{period}</Badge>
       </HStack>
