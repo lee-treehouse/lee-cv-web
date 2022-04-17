@@ -10,13 +10,10 @@ const ListWithTicks: React.FunctionComponent<props> = ({ items }) => {
   return (
     <List size='small'>
       {items.map((item: any, counter: any) => (
-        <>
-          <ListItem key={counter}>
-            <ListIcon as={BiCheck} color='green.500' key={`image${counter}`} />
-
-            {item}
-          </ListItem>
-        </>
+        <ListItem key={counter}>
+          <ListIcon as={BiCheck} color='green.500' key={counter + '-image'} />
+          {item}
+        </ListItem>
       ))}
     </List>
   );
