@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heading, Text, Badge, HStack, Box } from '@chakra-ui/react';
-import ResponsibilitiesList from './ResponsibilitiesList';
+import ListWithTicks from './ListWithTicks';
 
 interface props {
   title: string;
@@ -24,7 +24,7 @@ const Role: React.FunctionComponent<props> = ({
         <Text fontStyle='italic'>{employer}</Text>
         <Badge colorScheme='blue'>{period}</Badge>
       </HStack>
-      {items && <ResponsibilitiesList items={items} />}
+      {items && <ListWithTicks items={items} />}
     </Box>
   );
 };

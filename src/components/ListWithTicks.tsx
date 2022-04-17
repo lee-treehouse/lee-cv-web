@@ -6,7 +6,7 @@ interface props {
   items: string[];
 }
 
-const ResponsibilitiesList: React.FunctionComponent<props> = ({ items }) => {
+const ListWithTicks: React.FunctionComponent<props> = ({ items }) => {
   return (
     <List size='small'>
       {items.map((item: any, counter: any) => (
@@ -22,4 +22,4 @@ const ResponsibilitiesList: React.FunctionComponent<props> = ({ items }) => {
   );
 };
 
-export default ResponsibilitiesList;
+export default ListWithTicks;

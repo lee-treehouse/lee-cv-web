@@ -1,7 +1,7 @@
 import React from 'react';
 import Role from './Role';
 import SectionHeader from './SectionHeader';
-import ResponsibilitiesList from './ResponsibilitiesList';
+import ListWithTicks from './ListWithTicks';
 import { Box, HStack, Tag } from '@chakra-ui/react';
 
 const PADDING_BELOW_SECTIONS = '1.5rem';
@@ -11,7 +11,7 @@ const CV = () => {
     <>
       <Box marginBottom={PADDING_BELOW_SECTIONS}>
         <SectionHeader text='Summary' />
-        <ResponsibilitiesList
+        <ListWithTicks
           items={[
             '10 years+ experience in web development',
             'Excellent communication and interpersonal skills',
@@ -44,7 +44,7 @@ const CV = () => {
 
       <Box marginBottom={PADDING_BELOW_SECTIONS}>
         <SectionHeader text='Recent Certifications' />
-        <ResponsibilitiesList
+        <ListWithTicks
           items={[
             'IBM Full Stack Cloud Developer Professional Certificate - April 2022 ',
             'The future of Payment Technologies - October 2021 ',
