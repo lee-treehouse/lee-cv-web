@@ -17,14 +17,14 @@ const Role: React.FunctionComponent<props> = ({
 }) => {
   return (
     <Box marginBottom='1.5rem'>
-      <Heading as='h4' size='small'>
+      <Heading as='h4' size='small' marginBottom='0.5rem'>
         {title}
       </Heading>
       <HStack>
         <Text fontStyle='italic'>{employer}</Text>
         <Badge colorScheme='purple'>{period}</Badge>
       </HStack>
-      <ResponsibilitiesList items={items} />
+      {items && <ResponsibilitiesList items={items} />}
     </Box>
   );
 };

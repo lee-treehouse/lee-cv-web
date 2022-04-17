@@ -7,11 +7,13 @@ import {
   VStack,
   Text,
   Image,
-  Link,
   Button,
+  Link,
 } from '@chakra-ui/react';
 import photoOfLee from '../src/photo_of_lee.jpg';
 import CV from './components/CV';
+import About from './components/About';
+import { Routes, Route, Link as RouterLink } from 'react-router-dom';
 
 function App() {
   return (
@@ -35,16 +37,28 @@ function App() {
             </HStack>
           </Box>
           <Box>
-            <HStack spacing='1rem'>
-              <Link>CV</Link>
-              <Link>About</Link>
-              <Button>GitHub</Button>
-            </HStack>
+            <nav>
+              <HStack spacing='1rem'>
+                <Link as={RouterLink} to='/'>
+                  CV
+                </Link>
+                <Link as={RouterLink} to='/about'>
+                  About
+                </Link>
+
+                <Link href='https://github.com/lee-treehouse' isExternal>
+                  <Button>GitHub</Button>
+                </Link>
+              </HStack>
+            </nav>
           </Box>
         </Flex>
       </header>
       <main>
-        <CV />
+        <Routes>
+          <Route path='/' element={<CV />} />
+          <Route path='about' element={<About />} />
+        </Routes>
       </main>
     </Box>
   );
