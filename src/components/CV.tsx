@@ -46,7 +46,6 @@ const CV = () => {
         <SectionHeader text='Recent Certifications' />
         <ListWithTicks
           items={[
-            'IBM Full Stack Cloud Developer Professional Certificate - April 2022 ',
             'The future of Payment Technologies - October 2021 ',
             'Introduction to Web Accessibility - September 2021 ',
           ]}
