@@ -57,7 +57,7 @@ const CV = () => {
 
         <Role
           title='Software Engineer'
-          period='November 2021 - Current'
+          period='November 2021 - September 2022'
           employer='Littlepay'
         />
 
