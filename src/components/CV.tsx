@@ -56,9 +56,22 @@ const CV = () => {
         <SectionHeader text='Professional Experience' />
 
         <Role
+          title='Senior Software Engineer'
+          period='September 2021 - Current'
+          employer='Enablo'
+        />
+
+        <Role
           title='Software Engineer'
           period='November 2021 - September 2022'
           employer='Littlepay'
+          items={[
+            'Front-end development of embeddable SDK to deliver ecommerce checkout (Typescript)',
+            'Maintenance and feature development in legacy JavaScript, Angular & Angularjs applications.',
+            'Back-end maintenance and issue investigation in Node and Java using AWS.',
+            'Working closely with the engineering manager, product manager, and client to break down complex requirements and facilitate understanding and delivery across the team.',
+            'Interview Committee and Incident Response Group member, actively involved in increasing quality, communication & individual development across the business.',
+          ]}
         />
 
         <Role
