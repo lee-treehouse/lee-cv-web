@@ -13,11 +13,12 @@ const CV = () => {
         <SectionHeader text='Summary' />
         <ListWithTicks
           items={[
-            '10 years+ experience in web development',
+            '12 years+ experience in web development',
             'Excellent communication and interpersonal skills',
+            'Strong domain knowledge and experience in finance & investment',
             'Grasps complex business and technical issues quickly',
             'Confidently skilled proactive all-rounder, efficient and organized',
-            'Recent returnee to industry after time out raising children',
+            'Passionate advocate for diversity in the technology industry',
           ]}
         />
       </Box>
@@ -68,8 +69,8 @@ const CV = () => {
           items={[
             'Front-end development of embeddable SDK to deliver ecommerce checkout (Typescript)',
             'Maintenance and feature development in legacy JavaScript, Angular & Angularjs applications.',
-            'Back-end maintenance and issue investigation in Node and Java using AWS.',
-            'Working closely with the engineering manager, product manager, and client to break down complex requirements and facilitate understanding and delivery across the team.',
+            'Back-end maintenance and issue investigation in Node and Java running on AWS Lambda with Dynamo DB.',
+            'Working closely with the engineering manager and product manager to break down complex requirements and facilitate understanding and delivery across the team.',
             'Interview Committee and Incident Response Group member, actively involved in increasing quality, communication & individual development across the business.',
           ]}
         />
