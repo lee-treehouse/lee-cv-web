@@ -7,6 +7,18 @@ import { Box, HStack, Tag } from '@chakra-ui/react';
 const PADDING_BELOW_SECTIONS = '1.5rem';
 
 const CV = () => {
+  const technologies = [
+    'Javascript',
+    'Typescript',
+    'React',
+    'Node',
+    'AWS',
+    'Redux',
+    'CSS',
+    'HTML',
+    'SQL',
+  ];
+
   return (
     <>
       <Box marginBottom={PADDING_BELOW_SECTIONS}>
@@ -19,6 +31,7 @@ const CV = () => {
             'Grasps complex business and technical issues quickly',
             'Confidently skilled proactive all-rounder, efficient and organized',
             'Passionate advocate for diversity in the technology industry',
+            'Rigorous and thorough problem solver who loves to take on challenges',
           ]}
         />
       </Box>
@@ -26,16 +39,7 @@ const CV = () => {
       <Box marginBottom={PADDING_BELOW_SECTIONS}>
         <SectionHeader text='Technologies' />
         <HStack spacing={2}>
-          {[
-            'Javascript',
-            'Typescript',
-            'React',
-            'Node',
-            'Redux',
-            'CSS',
-            'HTML',
-            'SQL',
-          ].map((item) => (
+          {technologies.map((item) => (
             <Tag size='sm' key={item} variant='solid' colorScheme='blue'>
               {item}
             </Tag>
@@ -55,11 +59,20 @@ const CV = () => {
 
       <Box marginBottom={PADDING_BELOW_SECTIONS}>
         <SectionHeader text='Professional Experience' />
-
         <Role
           title='Senior Software Engineer'
           period='September 2021 - Current'
           employer='Enablo'
+          items={[
+            'Recovering engineering operations after a massive loss of staff: solving business as usual problems, engaging in new development, and onboarding and supporting new team members.',
+            'Developing integrations with Meta Workplace API and Workplace Product including process concerns such as app review and penetration testing.',
+            'Discovery, documentation, and diagramming of existing systems.',
+            'Discovery, design, and implementation of new systems including direct liaison with large client (McDonald’s).',
+            'Back-end micro service development with Node & Express, MySQL, Docker.',
+            'Front-end development with React and Typescript.',
+            'Deployment, configuration and troubleshooting across multiple cloud environments (AWS, GCP and Azure) as well as older on prem solutions eg Windows Server.',
+            'Promoting increased communication, rigour and traceability in engineering team practices.',
+          ]}
         />
 
         <Role
